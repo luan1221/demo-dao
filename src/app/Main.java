@@ -13,8 +13,7 @@ public class Main {
         SellerDAO sellerDao = DaoFactory.createSellerDao();
         //Seller seller = sellerDao.findById(3);
         //System.out.println(seller);
-        Department department = new Department(2, null);
-        List<Seller> list = sellerDao.findByDepartment(department);
+        List<Seller> list = sellerDao.findAll();
         for (Seller seller : list) {
             System.out.println(seller);
         }
